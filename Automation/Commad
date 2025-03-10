@@ -1,0 +1,9 @@
+robot --include smoke path/to/your/test_suite.robot
+
+robot --include smoke path/to/your/test_folder/
+
+robot --exclude smoke path/to/your/test_suite.robot
+
+robot --include smoke ./tests/
+
+robot --include smoke TestSuite1.robot TestSuite2.robot
