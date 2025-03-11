@@ -27,5 +27,5 @@ ${RESULT_ACCOUNT_TEXT}     xpath=//p[contains(.,'Accounts')]
 ${ACCOUNT_PAGE_HEADING}     xpath=//h1[@class='slds-var-p-right_x-small'][contains(.,'Accounts')]
 ${SEARCH_XPATH}    xpath=//input[@placeholder='Search this list...']
 #${SEARCH_BRICK_NAME}       Test
-${SEARCH_BRICK_NAME_XPath}    //a[contains(@title,"Test")]  # Replace with the actual locator of the "brick name" element
+${SEARCH_BRICK_NAME_XPath}    xpath=(//span[@class='slds-grid slds-grid_align-spread'])[2]//a  # Replace with the actual locator of the "brick name" element
 ${SAVE_BUTTON_XPATH}     xpath=//button[@name='SaveEdit']

@@ -41,7 +41,7 @@ Search and Create Brick Account
     Clear Element Text    ${SEARCH_XPATH}
     Sleep    10s
     Input Text     ${SEARCH_XPATH}   ${BRICK_NAME}
-    Sleep    5s
+    Sleep    10s
     Press Key    ${SEARCH_XPATH}   \\13
     Sleep    10s
     ${brick_exists}=    Run Keyword And Return Status    Element Should Be Visible    ${SEARCH_BRICK_NAME_XPath}
