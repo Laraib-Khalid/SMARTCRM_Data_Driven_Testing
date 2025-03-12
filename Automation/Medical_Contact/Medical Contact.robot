@@ -73,11 +73,12 @@ Search and Create Medical Contact
     Input Text     ${SEARCH_XPATH}   ${FIRST_NAME} ${LAST_NAME}
     Press Key    ${SEARCH_XPATH}    \\13
     Sleep    5s
-    ${contact_exists}=    Run Keyword And Return Status    Element Should Be Visible    xpath=//a[@title='${FIRST_NAME} ${LAST_NAME}']
+    ${SEARCH_CONTACT}   Set Variable    xpath=//a[@title='${FIRST_NAME} ${LAST_NAME}']
+    ${contact_exists}=    Run Keyword And Return Status    Element Should Be Visible    ${SEARCH_CONTACT}
 
 
     Run Keyword If    ${contact_exists}
-    ...    Click Element    xpath=//a[@title='${FIRST_NAME} ${LAST_NAME}']
+    ...    Click Element    ${SEARCH_CONTACT}
 
     ...    ELSE
     ...    Create Medical Contact   ${FIRST_NAME}	${LAST_NAME}	${CONTACT_EXTERNAL_ID}	${ACCOUNT_NAME}	${EMAIL}	${MOBILE}	${PHONE}	${MAILNG_ADDRESS}

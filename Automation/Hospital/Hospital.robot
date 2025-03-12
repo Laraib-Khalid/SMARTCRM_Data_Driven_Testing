@@ -51,10 +51,12 @@ Search and Create Hospital Account
     Input Text   ${SEARCH_XPATH}    ${ACCOUNT_NAME}
     Sleep    10s
     Press Key    ${SEARCH_XPATH}    \\13
+    ${SEARCH_HOSPITAL_NAME}  Set Variable    xpath=//a[@title='${ACCOUNT_NAME}']
     Sleep    10s
-    ${hospital_exists}=    Run Keyword And Return Status    Element Should Be Visible    ${HOSPITAL_NAME_ID}
+
+    ${hospital_exists}=    Run Keyword And Return Status    Element Should Be Visible    ${SEARCH_HOSPITAL_NAME}
     Run Keyword If    ${hospital_exists}
-    ...    Click Element    ${HOSPITAL_NAME_ID}
+    ...    Click Element    ${SEARCH_HOSPITAL_NAME}
 
     ...    ELSE
     ...    Create Hospital    ${ACCOUNT_NAME}     ${BRICK_NAME}     ${BILLING_ADDRESS}

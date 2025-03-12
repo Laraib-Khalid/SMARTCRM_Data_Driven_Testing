@@ -16,4 +16,4 @@ ${ACCOUNT_BILLING_SEARCH_RESULT}  xpath=//*[contains(@data-item-id,'combobox-inp
 
 #   Hospital Account XPath
 ${ACCOUNT_TAB_XPATH}     xpath=//a[@title='Accounts']
-${HOSPITAL_NAME_ID}    xpath=(//span[@class='slds-grid slds-grid_align-spread'])[2]//a
+#${HOSPITAL_NAME_ID}    xpath=(//span[@class='slds-grid slds-grid_align-spread'])[2]//a
