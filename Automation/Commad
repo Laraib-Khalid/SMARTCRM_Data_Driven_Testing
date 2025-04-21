@@ -7,3 +7,6 @@ robot --exclude smoke path/to/your/test_suite.robot
 robot --include smoke ./tests/
 
 robot --include smoke TestSuite1.robot TestSuite2.robot
+
+robot --listener allure_robotframework:./allure-results --outputdir ./Report  Automation/Login Automation/Brick Automation/Hospital Automation/Medical_Contact
+

@@ -12,7 +12,7 @@ ${CRM_TEXT_VISIBLE}     xpath=/html/body/div[4]/div[1]/section/div[1]/div[1]/one
 
 *** Keywords ***
 Open My Browser
-    Open Browser    https://raptorsconsulting--qasmartcrm.sandbox.lightning.force.com/  Edge
+    Open Browser    https://raptorsconsulting--qasmartcrm.sandbox.lightning.force.com/  Chrome
     Maximize Browser Window
 
 

@@ -44,6 +44,7 @@ Search and Create Brick Account
     Sleep    10s
     Press Key    ${SEARCH_XPATH}   \\13
     Sleep    10s
+    ${SEARCH_BRICK_NAME_XPath}   Set Variable    xpath=//a[@title='${BRICK_NAME}']
     ${brick_exists}=    Run Keyword And Return Status    Element Should Be Visible    ${SEARCH_BRICK_NAME_XPath}
 #
 
