@@ -27,7 +27,6 @@ Smoke Login Test Case Using ${username} and ${password}
     [Tags]    smoke    critical    login
     Login Scenario
 
-
 Regression Login Test Case Using ${username} and ${password}
     [Documentation]    Test has only tag 'requirement: 41'.
     [Tags]    regression
