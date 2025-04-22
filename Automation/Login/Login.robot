@@ -12,8 +12,9 @@ Login Scenario
     Input Text    ${USERNAME_XPATH}    ${username}
     Input Password    ${PASSWORD_XPATH}    ${password}
     Click Button    ${LOGIN_BUTTON_XPATH}
+    Sleep    5s
     IF    '${username}' == 'admin.qasmartcrm@bssuniversal.com' and '${password}' == 'Bss@2025'
-        Wait Until Element Is Visible    ${CRM_TEXT_VISIBLE}     20s
+        Wait Until Element Is Visible    ${CRM_TEXT_VISIBLE}     10s
     ELSE
         Page Should Contain    Please check your username and password. If you still can't log in, contact your Salesforce administrator.
     END
