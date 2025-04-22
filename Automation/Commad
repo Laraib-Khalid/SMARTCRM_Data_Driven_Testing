@@ -20,8 +20,7 @@ Open the Allure Report in a browser:
 allure open ./allure-report
 
 
-
-
+Commands:
 
 robot --include smoke path/to/your/test_suite.robot
 
