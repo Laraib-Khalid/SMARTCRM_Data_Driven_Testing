@@ -6,6 +6,23 @@ For CSV Extension File:
 pip install robotframework-datadriver
 
 
+For Allure Reporting:
+pip install robotframework
+pip install allure-robotframework
+
+
+Generate the Allure Report:
+allure generate ./allure-results -o ./allure-report --clean
+
+
+
+Open the Allure Report in a browser:
+allure open ./allure-report
+
+
+
+
+
 robot --include smoke path/to/your/test_suite.robot
 
 robot --include smoke path/to/your/test_folder/
