@@ -63,14 +63,13 @@ Search and Create Hospital Account
 
 
 *** Test Cases ***
+Smoke Account Test Case Using ${ACCOUNT_NAME}, ${BRICK_NAME} and ${BILLING_ADDRESS}
+    [Documentation]    Test has only tag 'requirement: 42'.
+    [Tags]    smoke
+    Search and Create Hospital Account
 
 
 Regression Account Test Case Using ${ACCOUNT_NAME}, ${BRICK_NAME} and ${BILLING_ADDRESS}
     [Documentation]    Test has only tag 'requirement: 41'.
     [Tags]    Regression
-    Search and Create Hospital Account
-
-Smoke Account Test Case Using ${ACCOUNT_NAME}, ${BRICK_NAME} and ${BILLING_ADDRESS}
-    [Documentation]    Test has only tag 'requirement: 42'.
-    [Tags]    smoke
     Search and Create Hospital Account
