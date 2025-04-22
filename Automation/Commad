@@ -1,3 +1,11 @@
+For XLSX Extension File:
+pip install -U robotframework-datadriver[XLS]
+
+
+For CSV Extension File:
+pip install robotframework-datadriver
+
+
 robot --include smoke path/to/your/test_suite.robot
 
 robot --include smoke path/to/your/test_folder/
